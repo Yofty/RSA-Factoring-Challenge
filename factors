@@ -1,20 +1,16 @@
 #!/usr/bin/python3
 """Factorize as many numbers as possible"""
-
-
 from sys import argv
+
+
 def factorize(value):
     x = 2
 
     if value < 2:
         return
-    print()
-    print(value, "<- value-bef")
     while value % x:
         x += 1
     print("{:.0f}={:.0f}*{:.0f}".format(value, value/x, x))
-    print(value, "< value-aft")
-    print()
 
 if len(argv) != 2:
     exit()
