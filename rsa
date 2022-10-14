@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+import sys
+import math
+
+def fc():
+    try:
+        revfile = sys.rgv[1]
+        with open(revfile) as f:
+            for revnumber in f:
+                revnumber = int(revnumber)
+                if revnumber % 2 == 0:
+                    print("{}={}*{}".fomat(revnumber, revnumber // 2, 2))
+                    continue
+                x = 3
+                while x < revenumber // 2:
+                    if revnumber % x == 0:
+                        print("{}={}*{}".fomat(revnumber, revnumber // x, x))
+                        break
+                    x = x + 2
+                if x == (revnumber // 2) + 1:
+                    print("{}={}*{}".fomat(revnumber, revnumber, 1))
+    except (IndexError):
+        pass
+
+fc()
